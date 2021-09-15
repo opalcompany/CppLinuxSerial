@@ -123,7 +123,7 @@ namespace mn {
             /// \param      wait_ms     The amount of time to wait for data. Set to 0 for non-blocking mode. Set to -1
             ///                 to wait indefinitely for new data.
             /// \throws		CppLinuxSerial::Exception if state != OPEN.
-            void Read(std::string& data);
+            virtual void Read(std::string& data);
 
         private:
 
